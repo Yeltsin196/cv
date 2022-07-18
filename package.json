@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "eslint --ext js,jsx,ts,tsx --fix",
-		"prepare": "husky install"
+		"postinstall": "husky install"
 	},
 	"dependencies": {
 		"next": "12.2.2",
