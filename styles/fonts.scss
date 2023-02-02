@@ -1,0 +1,165 @@
+@import './variables.scss';
+.f-84 {
+  $f-84: (
+    1920px: 84px,
+    769px: 72px,
+    76px: 56px,
+    260px: 42px,
+  );
+  @include poly-fluid-sizing('font-size', $f-84);
+}
+.f-80 {
+  $f-80: (
+    1920px: 64px,
+    1441px: 50px,
+    1440px: 64px,
+    769px: 54px,
+    768px: 64px,
+    415px: 46px,
+    414px: 36px,
+    240px: 26px,
+  );
+  @include poly-fluid-sizing('font-size', $f-80);
+}
+.f-72 {
+  $f-72: (
+    1920px: 72px,
+    992px: 50px,
+  );
+  @include poly-fluid-sizing('font-size', $f-72);
+}
+
+.f-64 {
+  $f-64: (
+    1920px: 64px,
+    769px: 60px,
+    768px: 64px,
+    415px: 60px,
+    414px: 36px,
+    375px: 30px,
+    240px: 25px,
+  );
+  @include poly-fluid-sizing('font-size', $f-64);
+}
+
+.f-50 {
+  $f-50: (
+    1920px: 50px,
+    992px: 30px,
+  );
+  @include poly-fluid-sizing('font-size', $f-50);
+}
+.f-48 {
+  $f-48: (
+    1920px: 48px,
+    240px: 28px,
+  );
+  @include poly-fluid-sizing('font-size', $f-48);
+}
+.f-40 {
+  $f-40: (
+    1920px: 40px,
+    992px: 20px,
+  );
+  @include poly-fluid-sizing('font-size', $f-40);
+}
+
+.f-36 {
+  $f-36: (
+    1920px: 36px,
+    769px: 26px,
+    768px: 36px,
+    415px: 28px,
+    414px: 28px,
+    240px: 20px,
+  );
+  @include poly-fluid-sizing('font-size', $f-36);
+}
+.f-32 {
+  $f-32: (
+    1920px: 32px,
+    769px: 24px,
+    768px: 24px,
+    415px: 20px,
+    414px: 24px,
+    376px: 20px,
+    375px: 24px,
+    240px: 20px,
+  );
+  @include poly-fluid-sizing('font-size', $f-32);
+}
+
+.f-24,
+.form-control.f-24 {
+  $f-24: (
+    1920px: 24px,
+    769px: 20px,
+    768px: 24px,
+    415px: 18px,
+    414px: 14px,
+    240px: 14px,
+  );
+  @include poly-fluid-sizing('font-size', $f-24);
+}
+.f-20 {
+  $f-20: (
+    1920px: 20px,
+    769px: 20px,
+    768px: 16px,
+    240px: 14px,
+  );
+  @include poly-fluid-sizing('font-size', $f-20);
+}
+.f-18 {
+  $f-18: (
+    1920px: 18px,
+    992px: 13px,
+  );
+  @include poly-fluid-sizing('font-size', $f-18);
+}
+.f-16 {
+  $f-16: (
+    1920px: 16px,
+    1025px: 13px,
+    1024px: 16px,
+    769px: 13px,
+    768px: 16px,
+    376px: 13px,
+    375px: 16px,
+    240px: 13px,
+  );
+  @include poly-fluid-sizing('font-size', $f-16);
+}
+.f-15 {
+  $f-15: (
+    1920px: 15px,
+    992px: 12px,
+  );
+  @include poly-fluid-sizing('font-size', $f-15);
+}
+.f-14 {
+  $f-14: (
+    1920px: 14px,
+    769px: 12px,
+    768px: 14px,
+    767px: 12px,
+    415px: 12px,
+    414px: 10px,
+    240px: 10px,
+  );
+  @include poly-fluid-sizing('font-size', $f-14);
+}
+.f-12 {
+  $f-12: (
+    1920px: 12px,
+    240px: 12px,
+  );
+  @include poly-fluid-sizing('font-size', $f-12);
+}
+.f-10 {
+  $f-10: (
+    1920px: 10px,
+    992px: 8px,
+  );
+  @include poly-fluid-sizing('font-size', $f-10);
+}

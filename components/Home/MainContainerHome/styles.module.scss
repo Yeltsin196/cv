@@ -1,0 +1,44 @@
+@import '/styles/utilities.scss';
+@import '/styles/variables.scss';
+
+$medida: 1920;
+
+.f56l {
+  $f56l: (
+    1920px: 56px,
+    1441px: 52px,
+    1440px: 48px,
+    769px: 48px,
+    768px: 48px,
+    415px: 24px,
+    414px: 32px,
+    375px: 32px,
+    240px: 28px,
+  );
+  @include poly-fluid-sizing('font-size', $f56l);
+}
+.paddingSection {
+  padding-left: calculate-vw(355, $medida);
+  padding-right: calculate-vw(355, $medida);
+  padding-top: calculate-vw(92, $medida);
+  padding-bottom: calculate-vw(92, $medida);
+  @media screen and (max-width: 1440px) {
+    $medida: 1440;
+    padding-left: calculate-vw(355, $medida);
+    padding-right: calculate-vw(355, $medida);
+    padding-top: calculate-vw(92, $medida);
+    padding-bottom: calculate-vw(92, $medida);
+  }
+  @media screen and (max-width: 1366px) {
+    $medida: 1366;
+    padding-left: calculate-vw(250, $medida);
+    padding-right: calculate-vw(250, $medida);
+    padding-top: calculate-vw(92, $medida);
+    padding-bottom: calculate-vw(92, $medida);
+  }
+}
+
+.paddingButtonsContainer {
+  padding-left: calculate-vw(250, $medida);
+  padding-right: calculate-vw(250, $medida);
+}
