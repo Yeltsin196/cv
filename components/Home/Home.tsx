@@ -1,11 +1,12 @@
 import React from "react";
-import { WeHelping } from "./Information";
+import { SwiperInfo, WeHelping } from "./Information";
 import { MainContainerHome } from "./MainContainerHome";
 
 export const HomeComponent = () => {
   return (
     <div>
       <MainContainerHome></MainContainerHome>
+      <SwiperInfo></SwiperInfo>
       <WeHelping></WeHelping>
     </div>
   );
