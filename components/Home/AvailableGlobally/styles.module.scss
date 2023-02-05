@@ -1,0 +1,53 @@
+@import "/styles/utilities.scss";
+@import "/styles/variables.scss";
+
+$medida: 1920;
+
+.paddingSection {
+  padding-left: calculate-vw(720, $medida);
+  padding-right: calculate-vw(720, $medida);
+  padding-top: calculate-vw(52, $medida);
+  padding-bottom: calculate-vw(52, $medida);
+  @media screen and (max-width: 1680px) {
+    $medida: 1680;
+    padding-left: calculate-vw(450, $medida);
+    padding-right: calculate-vw(450, $medida);
+    padding-top: calculate-vw(52, $medida);
+    padding-bottom: calculate-vw(52, $medida);
+  }
+  @media screen and (max-width: 1440px) {
+    $medida: 1440;
+    padding-left: calculate-vw(480, $medida);
+    padding-right: calculate-vw(480, $medida);
+    padding-top: calculate-vw(52, $medida);
+    padding-bottom: calculate-vw(52, $medida);
+  }
+  @media screen and (max-width: 1024px) {
+    $medida: 1024;
+    padding-left: calculate-vw(180, $medida);
+    padding-right: calculate-vw(180, $medida);
+    padding-top: calculate-vw(50, $medida);
+    padding-bottom: calculate-vw(50, $medida);
+  }
+  @media screen and (max-width: 768px) {
+    $medida: 768;
+    padding-left: calculate-vw(120, $medida);
+    padding-right: calculate-vw(120, $medida);
+    padding-top: calculate-vw(50, $medida);
+    padding-bottom: calculate-vw(50, $medida);
+  }
+  @media screen and (max-width: 414px) {
+    $medida: 414;
+    padding-left: calculate-vw(42, $medida);
+    padding-right: calculate-vw(42, $medida);
+    padding-top: calculate-vw(50, $medida);
+    padding-bottom: calculate-vw(50, $medida);
+  }
+  @media screen and (max-width: 375px) {
+    $medida: 375;
+    padding-left: calculate-vw(42, $medida);
+    padding-right: calculate-vw(42, $medida);
+    padding-top: calculate-vw(50, $medida);
+    padding-bottom: calculate-vw(50, $medida);
+  }
+}

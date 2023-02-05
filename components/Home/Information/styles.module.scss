@@ -1,0 +1,71 @@
+@import "/styles/utilities.scss";
+@import "/styles/variables.scss";
+
+$medida: 1920;
+
+.f40l {
+  $f40l: (
+    1920px: 52px,
+    1441px: 52px,
+    1440px: 40px,
+    769px: 36px,
+    768px: 40px,
+    415px: 24px,
+    414px: 24px,
+    375px: 24px,
+    240px: 22px,
+  );
+  @include poly-fluid-sizing("font-size", $f40l);
+}
+.paddingSection {
+  padding-left: calculate-vw(326, $medida);
+  padding-right: calculate-vw(326, $medida);
+  padding-top: calculate-vw(60, $medida);
+  padding-bottom: calculate-vw(60, $medida);
+  @media screen and (max-width: 1440px) {
+    $medida: 1440;
+    padding-left: calculate-vw(180, $medida);
+    padding-right: calculate-vw(180, $medida);
+    padding-top: calculate-vw(60, $medida);
+    padding-bottom: calculate-vw(60, $medida);
+  }
+  @media screen and (max-width: 768px) {
+    $medida: 768;
+    padding-left: calculate-vw(70, $medida);
+    padding-right: calculate-vw(70, $medida);
+    padding-top: calculate-vw(60, $medida);
+    padding-bottom: calculate-vw(60, $medida);
+  }
+}
+
+.gapContainer {
+  column-gap: calculate-vw(130, $medida);
+  @media screen and (max-width: 1440px) {
+    $medida: 1440;
+    column-gap: calculate-vw(130, $medida);
+  }
+}
+
+.imgSize {
+  width: calculate-vw(530, $medida);
+  @media screen and (max-width: 1440px) {
+    $medida: 1440;
+    width: calculate-vw(530, $medida);
+  }
+  @media screen and (max-width: 1024px) {
+    $medida: 1024;
+    width: calculate-vw(530, $medida);
+  }
+  @media screen and (max-width: 768px) {
+    $medida: 768;
+    width: calculate-vw(530, $medida);
+  }
+  @media screen and (max-width: 414px) {
+    $medida: 414;
+    width: calculate-vw(290, $medida);
+  }
+  @media screen and (max-width: 375px) {
+    $medida: 375;
+    width: calculate-vw(290, $medida);
+  }
+}

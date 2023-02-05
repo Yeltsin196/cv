@@ -1,0 +1,49 @@
+@import "/styles/utilities.scss";
+@import "/styles/variables.scss";
+
+$medida: 1920;
+.f56l {
+  $f56l: (
+    1920px: 56px,
+    1441px: 52px,
+    1440px: 56px,
+    769px: 52px,
+    768px: 42px,
+    415px: 32px,
+    414px: 32px,
+    375px: 32px,
+    240px: 30px,
+  );
+  @include poly-fluid-sizing("font-size", $f56l);
+}
+.paddingSection {
+  padding-left: calculate-vw(165, $medida);
+  padding-right: calculate-vw(165, $medida);
+  padding-top: calculate-vw(60, $medida);
+  padding-bottom: calculate-vw(60, $medida);
+  @media screen and (max-width: 1440px) {
+    $medida: 1440;
+    padding-left: calculate-vw(165, $medida);
+    padding-right: calculate-vw(165, $medida);
+    padding-top: calculate-vw(60, $medida);
+    padding-bottom: calculate-vw(60, $medida);
+  }
+  @media screen and (max-width: 414px) {
+    $medida: 414;
+    padding-left: calculate-vw(45, $medida);
+    padding-right: calculate-vw(45, $medida);
+    padding-top: calculate-vw(40, $medida);
+    padding-bottom: calculate-vw(40, $medida);
+  }
+  @media screen and (max-width: 375px) {
+    $medida: 375;
+    padding-left: calculate-vw(45, $medida);
+    padding-right: calculate-vw(45, $medida);
+    padding-top: calculate-vw(40, $medida);
+    padding-bottom: calculate-vw(40, $medida);
+  }
+}
+
+.gapContainer {
+  column-gap: calculate-vw(110, $medida);
+}

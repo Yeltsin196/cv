@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -23,13 +24,23 @@ module.exports = {
       colors,
       primary: "var(--color-primary)",
       white: "var(--color-white)",
+      light: {
+        blue: "var(--color-light-blue)",
+      },
     },
     letterSpacing: {
       custom: "1px",
+      medium: "0.5px",
+      small: "0.1px",
     },
     extend: {
       boxShadow: {},
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    /* require("@tailwindcss/forms"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"), */
+  ],
 };

@@ -1,0 +1,29 @@
+@import "/styles/utilities.scss";
+@import "/styles/variables.scss";
+
+$medida: 1920;
+
+.paddingSection {
+  padding-left: calculate-vw(356, $medida);
+  padding-right: calculate-vw(356, $medida);
+  padding-top: calculate-vw(66, $medida);
+  padding-bottom: calculate-vw(66, $medida);
+  @media screen and (max-width: 1440px) {
+    $medida: 1440;
+    padding-left: calculate-vw(256, $medida);
+    padding-right: calculate-vw(256, $medida);
+    padding-top: calculate-vw(66, $medida);
+    padding-bottom: calculate-vw(66, $medida);
+  }
+}
+
+.ImgSize {
+  width: 126px;
+  height: 40px;
+
+  @media screen and (max-width: 1023px) {
+    $medida: 1280;
+    width: 17px;
+    height: 44px;
+  }
+}

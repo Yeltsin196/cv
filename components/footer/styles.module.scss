@@ -1,0 +1,39 @@
+@import "/styles/utilities.scss";
+@import "/styles/variables.scss";
+
+$medida: 1920;
+
+.paddingContainer {
+  padding-left: calculate-vw(225, $medida);
+  padding-right: calculate-vw(225, $medida);
+  padding-top: calculate-vw(40, $medida);
+  padding-bottom: calculate-vw(32, $medida);
+  @media screen and (max-width: 1440px) {
+    $medida: 1440;
+    padding-left: calculate-vw(165, $medida);
+    padding-right: calculate-vw(165, $medida);
+    padding-top: calculate-vw(40, $medida);
+    padding-bottom: calculate-vw(32, $medida);
+  }
+  @media screen and (max-width: 768px) {
+    $medida: 768;
+    padding-left: calculate-vw(89, $medida);
+    padding-right: calculate-vw(89, $medida);
+    padding-top: calculate-vw(40, $medida);
+    padding-bottom: calculate-vw(19, $medida);
+  }
+  @media screen and (max-width: 414px) {
+    $medida: 414;
+    padding-left: calculate-vw(89, $medida);
+    padding-right: calculate-vw(89, $medida);
+    padding-top: calculate-vw(40, $medida);
+    padding-bottom: calculate-vw(19, $medida);
+  }
+  @media screen and (max-width: 375px) {
+    $medida: 375;
+    padding-left: calculate-vw(89, $medida);
+    padding-right: calculate-vw(89, $medida);
+    padding-top: calculate-vw(40, $medida);
+    padding-bottom: calculate-vw(19, $medida);
+  }
+}
